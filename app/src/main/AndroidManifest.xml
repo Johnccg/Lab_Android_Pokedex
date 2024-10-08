@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--PErmisos-->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Pokedex_Lab"
+        tools:targetApi="31" >
+    <!-- Añade la declaración de una actividad a la aplicación -->
+    <activity
+        android:name=".MainActivity"
+        android:exported="true"
+        android:theme="@style/Theme.Pokedex_Lab.NoActionBar"
+        android:screenOrientation="portrait"
+        >
+
+        <!--Lo que debemos agregar ahora es un intent filter y un category
+         este en particular es muy lineal en el aspecto que define a nuestro activity como el primero
+         y el que al ejecutar la aplicación deberá iniciar todo.-->
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+
+    </application>
+</manifest>
