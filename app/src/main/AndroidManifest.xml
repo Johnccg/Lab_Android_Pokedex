@@ -17,7 +17,7 @@
         tools:targetApi="31" >
     <!-- Añade la declaración de una actividad a la aplicación -->
     <activity
-        android:name=".MainActivity"
+        android:name=".framework.views.MainActivity"
         android:exported="true"
         android:theme="@style/Theme.Pokedex_Lab.NoActionBar"
         android:screenOrientation="portrait"

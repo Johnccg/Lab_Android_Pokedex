@@ -78,4 +78,11 @@ dependencies {
     //Data binding
     implementation (libs.androidx.databinding.runtime)
     //implementation 'androidx.databinding:databinding-runtime:7.1.2'
+
+    // ViewModel
+    implementation (libs.androidx.lifecycle.viewmodel.ktx)
+    //implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1"
+    // LiveData
+    implementation (libs.lifecycle.livedata.ktx)
+    //implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.3.1"
 }
